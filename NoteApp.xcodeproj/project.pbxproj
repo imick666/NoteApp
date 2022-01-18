@@ -21,6 +21,12 @@
 		E0EEC7FF2796D07400639EB5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EEC7D12796D07200639EB5 /* Persistence.swift */; };
 		E0EEC8002796D07400639EB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0EEC7D22796D07400639EB5 /* Assets.xcassets */; };
 		E0EEC8012796D07400639EB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0EEC7D22796D07400639EB5 /* Assets.xcassets */; };
+		E0EEC8132796D1A200639EB5 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EEC8122796D1A200639EB5 /* Home.swift */; };
+		E0EEC8142796D1A200639EB5 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EEC8122796D1A200639EB5 /* Home.swift */; };
+		E0EEC8172796D2B200639EB5 /* View+CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EEC8162796D2B200639EB5 /* View+CGRect.swift */; };
+		E0EEC8182796D2B200639EB5 /* View+CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EEC8162796D2B200639EB5 /* View+CGRect.swift */; };
+		E0EEC81A2796D39000639EB5 /* View+Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EEC8192796D39000639EB5 /* View+Bool.swift */; };
+		E0EEC81B2796D39000639EB5 /* View+Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EEC8192796D39000639EB5 /* View+Bool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,9 @@
 		E0EEC7F02796D07400639EB5 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0EEC7F42796D07400639EB5 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		E0EEC7F62796D07400639EB5 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		E0EEC8122796D1A200639EB5 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		E0EEC8162796D2B200639EB5 /* View+CGRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+CGRect.swift"; sourceTree = "<group>"; };
+		E0EEC8192796D39000639EB5 /* View+Bool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Bool.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +112,7 @@
 		E0EEC7CC2796D07200639EB5 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				E0EEC8152796D2A100639EB5 /* Extension */,
 				E0EEC8112796D0BC00639EB5 /* SupportingFiles */,
 				E0EEC8102796D0B300639EB5 /* View */,
 			);
@@ -150,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				E0EEC7D02796D07200639EB5 /* ContentView.swift */,
+				E0EEC8122796D1A200639EB5 /* Home.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -163,6 +174,15 @@
 				E0EEC7CD2796D07200639EB5 /* NoteApp.xcdatamodeld */,
 			);
 			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		E0EEC8152796D2A100639EB5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E0EEC8162796D2B200639EB5 /* View+CGRect.swift */,
+				E0EEC8192796D39000639EB5 /* View+Bool.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,7 +345,10 @@
 			files = (
 				E0EEC7F82796D07400639EB5 /* NoteApp.xcdatamodeld in Sources */,
 				E0EEC7FE2796D07400639EB5 /* Persistence.swift in Sources */,
+				E0EEC81A2796D39000639EB5 /* View+Bool.swift in Sources */,
+				E0EEC8132796D1A200639EB5 /* Home.swift in Sources */,
 				E0EEC7FA2796D07400639EB5 /* NoteAppApp.swift in Sources */,
+				E0EEC8172796D2B200639EB5 /* View+CGRect.swift in Sources */,
 				E0EEC7FC2796D07400639EB5 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,7 +359,10 @@
 			files = (
 				E0EEC7F92796D07400639EB5 /* NoteApp.xcdatamodeld in Sources */,
 				E0EEC7FF2796D07400639EB5 /* Persistence.swift in Sources */,
+				E0EEC81B2796D39000639EB5 /* View+Bool.swift in Sources */,
+				E0EEC8142796D1A200639EB5 /* Home.swift in Sources */,
 				E0EEC7FB2796D07400639EB5 /* NoteAppApp.swift in Sources */,
+				E0EEC8182796D2B200639EB5 /* View+CGRect.swift in Sources */,
 				E0EEC7FD2796D07400639EB5 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
