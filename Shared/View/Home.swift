@@ -31,9 +31,14 @@ struct Home: View {
             
             mainContent
         }
+#if os(macOS)
         .ignoresSafeArea()
+#endif
         .frame(width: isMacOS ? screenSize.width / 1.7 : nil, height: isMacOS ? screenSize.height - 180 : nil, alignment: .leading)
         .background(Color("BG").ignoresSafeArea())
+#if os(iOS)
+        .overlay(sideBar)
+#endif
         .preferredColorScheme(.light)
     }
     
@@ -51,6 +56,17 @@ struct Home: View {
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.bottom, isMacOS ? 0 : 10)
+            .overlay(
+                Rectangle()
+                    .fill(Color.black.opacity(0.15))
+                    .frame(height: 1)
+                    .padding(.horizontal, -25)
+                // Moving offset 6...
+                    .offset(y:6)
+                    .opacity(isMacOS ? 0 : 1),
+                
+                alignment: .bottom
+            )
             
             ScrollView(.vertical, showsIndicators: false) {
                 
@@ -121,14 +137,19 @@ struct Home: View {
     @ViewBuilder
     private var sideBar: some View {
         VStack {
-            Text("Pocket")
-                .font(.title2)
-                .fontWeight(.semibold)
+            
+            if isMacOS {
+                Text("Pocket")
+                    .font(.title2)
+                    .fontWeight(.semibold)
+            }
             
             // Add button
-            addButton
-                .zIndex(1)
-            
+            if isMacOS {
+                addButton
+                    .zIndex(1)
+            }
+                        
             VStack(spacing: 15) {
                 let colors = [
                     Color("Skin"),
@@ -141,18 +162,33 @@ struct Home: View {
                 ForEach(colors, id: \.self) { color in
                     Circle()
                         .fill(color)
-                        .frame(width: 20, height: 20)
+                        .frame(width: isMacOS ? 20 : 25,
+                               height: isMacOS ? 20 : 25)
                 }
             }
             .padding(.top, 20)
             .frame(height: showColors ? nil : 0)
             .opacity(showColors ? 1 : 0)
             .zIndex(0)
+            
+            if !isMacOS {
+                addButton
+                    .zIndex(1)
+
+            }
         }
+        #if os(macOS)
         .frame(maxHeight: .infinity, alignment: .top)
         .padding(.vertical)
         .padding(.horizontal, 22)
         .padding(.top, 35)
+        #else
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomTrailing)
+        .padding()
+        .background(BlurView(style: .systemUltraThinMaterialDark)
+                        .opacity(showColors ? 1 : 0)
+                        .ignoresSafeArea())
+        #endif
     }
     
     @ViewBuilder

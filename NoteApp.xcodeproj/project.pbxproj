@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E0CEB6DB27981EC4000B6C87 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CEB6DA27981EC4000B6C87 /* Note.swift */; };
 		E0CEB6DD279820AD000B6C87 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CEB6DA27981EC4000B6C87 /* Note.swift */; };
+		E0CEB6E327982B48000B6C87 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CEB6E227982B48000B6C87 /* BlurView.swift */; };
 		E0EEC7E92796D07400639EB5 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EEC7E82796D07400639EB5 /* Tests_iOS.swift */; };
 		E0EEC7EB2796D07400639EB5 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EEC7EA2796D07400639EB5 /* Tests_iOSLaunchTests.swift */; };
 		E0EEC7F52796D07400639EB5 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EEC7F42796D07400639EB5 /* Tests_macOS.swift */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		E0CEB6DA27981EC4000B6C87 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		E0CEB6E227982B48000B6C87 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		E0EEC7CE2796D07200639EB5 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		E0EEC7CF2796D07200639EB5 /* NoteAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteAppApp.swift; sourceTree = "<group>"; };
 		E0EEC7D02796D07200639EB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			children = (
 				E0EEC7D02796D07200639EB5 /* ContentView.swift */,
 				E0EEC8122796D1A200639EB5 /* Home.swift */,
+				E0CEB6E227982B48000B6C87 /* BlurView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				E0EEC7FA2796D07400639EB5 /* NoteAppApp.swift in Sources */,
 				E0CEB6DB27981EC4000B6C87 /* Note.swift in Sources */,
 				E0EEC8172796D2B200639EB5 /* View+CGRect.swift in Sources */,
+				E0CEB6E327982B48000B6C87 /* BlurView.swift in Sources */,
 				E0EEC81D2796E5AA00639EB5 /* macOS+NSTextField.swift in Sources */,
 				E0EEC7FC2796D07400639EB5 /* ContentView.swift in Sources */,
 			);
