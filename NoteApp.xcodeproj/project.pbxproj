@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E0C8135227999FFA0068E7A2 /* NoteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C8135127999FFA0068E7A2 /* NoteListView.swift */; };
+		E0C813542799A02D0068E7A2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C813532799A02D0068E7A2 /* CardView.swift */; };
+		E0C813562799A15C0068E7A2 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C813552799A15C0068E7A2 /* SidebarView.swift */; };
+		E0C813582799A21E0068E7A2 /* AddButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C813572799A21E0068E7A2 /* AddButtonView.swift */; };
+		E0C8135A2799A4500068E7A2 /* NoteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C8135127999FFA0068E7A2 /* NoteListView.swift */; };
+		E0C8135B2799A4550068E7A2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C813532799A02D0068E7A2 /* CardView.swift */; };
+		E0C8135C2799A4570068E7A2 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C813552799A15C0068E7A2 /* SidebarView.swift */; };
+		E0C8135D2799A4590068E7A2 /* AddButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C813572799A21E0068E7A2 /* AddButtonView.swift */; };
+		E0C813612799B00E0068E7A2 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C813602799B00E0068E7A2 /* SearchBarView.swift */; };
+		E0C813622799B1EE0068E7A2 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C813602799B00E0068E7A2 /* SearchBarView.swift */; };
 		E0CEB6DB27981EC4000B6C87 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CEB6DA27981EC4000B6C87 /* Note.swift */; };
 		E0CEB6DD279820AD000B6C87 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CEB6DA27981EC4000B6C87 /* Note.swift */; };
 		E0CEB6E327982B48000B6C87 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CEB6E227982B48000B6C87 /* BlurView.swift */; };
@@ -30,8 +40,7 @@
 		E0EEC8182796D2B200639EB5 /* View+CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EEC8162796D2B200639EB5 /* View+CGRect.swift */; };
 		E0EEC81A2796D39000639EB5 /* View+Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EEC8192796D39000639EB5 /* View+Bool.swift */; };
 		E0EEC81B2796D39000639EB5 /* View+Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EEC8192796D39000639EB5 /* View+Bool.swift */; };
-		E0EEC81D2796E5AA00639EB5 /* macOS+NSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EEC81C2796E5AA00639EB5 /* macOS+NSTextField.swift */; };
-		E0EEC81E2796E5AA00639EB5 /* macOS+NSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EEC81C2796E5AA00639EB5 /* macOS+NSTextField.swift */; };
+		E0EEC81E2796E5AA00639EB5 /* NSTextField+FocusRingType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EEC81C2796E5AA00639EB5 /* NSTextField+FocusRingType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +61,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E0C8135127999FFA0068E7A2 /* NoteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListView.swift; sourceTree = "<group>"; };
+		E0C813532799A02D0068E7A2 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		E0C813552799A15C0068E7A2 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		E0C813572799A21E0068E7A2 /* AddButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButtonView.swift; sourceTree = "<group>"; };
+		E0C813602799B00E0068E7A2 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		E0CEB6DA27981EC4000B6C87 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		E0CEB6E227982B48000B6C87 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		E0EEC7CE2796D07200639EB5 /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
@@ -71,7 +85,7 @@
 		E0EEC8122796D1A200639EB5 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		E0EEC8162796D2B200639EB5 /* View+CGRect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+CGRect.swift"; sourceTree = "<group>"; };
 		E0EEC8192796D39000639EB5 /* View+Bool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Bool.swift"; sourceTree = "<group>"; };
-		E0EEC81C2796E5AA00639EB5 /* macOS+NSTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "macOS+NSTextField.swift"; sourceTree = "<group>"; };
+		E0EEC81C2796E5AA00639EB5 /* NSTextField+FocusRingType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTextField+FocusRingType.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +120,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E0C813592799A3CC0068E7A2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E0C8135E2799A4890068E7A2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E0EEC81C2796E5AA00639EB5 /* NSTextField+FocusRingType.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E0C8135F2799AFD70068E7A2 /* Sidebar */ = {
+			isa = PBXGroup;
+			children = (
+				E0CEB6E227982B48000B6C87 /* BlurView.swift */,
+				E0C813552799A15C0068E7A2 /* SidebarView.swift */,
+				E0C813572799A21E0068E7A2 /* AddButtonView.swift */,
+			);
+			path = Sidebar;
+			sourceTree = "<group>";
+		};
 		E0CEB6DC27981EC7000B6C87 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +167,7 @@
 		E0EEC7CC2796D07200639EB5 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				E0C813592799A3CC0068E7A2 /* ViewModel */,
 				E0EEC8152796D2A100639EB5 /* Extension */,
 				E0EEC8112796D0BC00639EB5 /* SupportingFiles */,
 				E0EEC8102796D0B300639EB5 /* View */,
@@ -150,6 +190,7 @@
 		E0EEC7DE2796D07400639EB5 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
+				E0C8135E2799A4890068E7A2 /* Extension */,
 				E0EEC7DF2796D07400639EB5 /* macOS.entitlements */,
 			);
 			path = macOS;
@@ -176,9 +217,12 @@
 		E0EEC8102796D0B300639EB5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E0C8135F2799AFD70068E7A2 /* Sidebar */,
 				E0EEC7D02796D07200639EB5 /* ContentView.swift */,
 				E0EEC8122796D1A200639EB5 /* Home.swift */,
-				E0CEB6E227982B48000B6C87 /* BlurView.swift */,
+				E0C8135127999FFA0068E7A2 /* NoteListView.swift */,
+				E0C813532799A02D0068E7A2 /* CardView.swift */,
+				E0C813602799B00E0068E7A2 /* SearchBarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -199,7 +243,6 @@
 			children = (
 				E0EEC8162796D2B200639EB5 /* View+CGRect.swift */,
 				E0EEC8192796D39000639EB5 /* View+Bool.swift */,
-				E0EEC81C2796E5AA00639EB5 /* macOS+NSTextField.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -362,7 +405,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0C813582799A21E0068E7A2 /* AddButtonView.swift in Sources */,
 				E0EEC7F82796D07400639EB5 /* NoteApp.xcdatamodeld in Sources */,
+				E0C8135227999FFA0068E7A2 /* NoteListView.swift in Sources */,
 				E0EEC7FE2796D07400639EB5 /* Persistence.swift in Sources */,
 				E0EEC81A2796D39000639EB5 /* View+Bool.swift in Sources */,
 				E0EEC8132796D1A200639EB5 /* Home.swift in Sources */,
@@ -370,7 +415,9 @@
 				E0CEB6DB27981EC4000B6C87 /* Note.swift in Sources */,
 				E0EEC8172796D2B200639EB5 /* View+CGRect.swift in Sources */,
 				E0CEB6E327982B48000B6C87 /* BlurView.swift in Sources */,
-				E0EEC81D2796E5AA00639EB5 /* macOS+NSTextField.swift in Sources */,
+				E0C813612799B00E0068E7A2 /* SearchBarView.swift in Sources */,
+				E0C813542799A02D0068E7A2 /* CardView.swift in Sources */,
+				E0C813562799A15C0068E7A2 /* SidebarView.swift in Sources */,
 				E0EEC7FC2796D07400639EB5 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,14 +427,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0EEC7F92796D07400639EB5 /* NoteApp.xcdatamodeld in Sources */,
+				E0C8135D2799A4590068E7A2 /* AddButtonView.swift in Sources */,
 				E0EEC7FF2796D07400639EB5 /* Persistence.swift in Sources */,
 				E0EEC81B2796D39000639EB5 /* View+Bool.swift in Sources */,
 				E0EEC8142796D1A200639EB5 /* Home.swift in Sources */,
 				E0EEC7FB2796D07400639EB5 /* NoteAppApp.swift in Sources */,
+				E0C8135C2799A4570068E7A2 /* SidebarView.swift in Sources */,
 				E0CEB6DD279820AD000B6C87 /* Note.swift in Sources */,
 				E0EEC8182796D2B200639EB5 /* View+CGRect.swift in Sources */,
-				E0EEC81E2796E5AA00639EB5 /* macOS+NSTextField.swift in Sources */,
+				E0EEC81E2796E5AA00639EB5 /* NSTextField+FocusRingType.swift in Sources */,
+				E0C813622799B1EE0068E7A2 /* SearchBarView.swift in Sources */,
 				E0EEC7FD2796D07400639EB5 /* ContentView.swift in Sources */,
+				E0C8135B2799A4550068E7A2 /* CardView.swift in Sources */,
+				E0C8135A2799A4500068E7A2 /* NoteListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,12 +7,17 @@
 
 import Foundation
 
-struct Note: Identifiable {
+class Note: Identifiable, ObservableObject {
     var id = UUID().uuidString
     var note: String
     var date: Date
     var cardColor: String
     
+    init(note: String, date: Date, cardColor: String) {
+        self.note = note
+        self.date = date
+        self.cardColor = cardColor
+    }
     
 }
 
